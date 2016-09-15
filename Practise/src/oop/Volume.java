@@ -1,12 +1,6 @@
 package oop;
 
 import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
-import java.lang.reflect.*;
-import java.security.Permission;
 
 public class Volume {
 	 public static void main(String[] args) throws IOException {

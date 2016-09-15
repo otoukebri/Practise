@@ -1,10 +1,6 @@
 package hackerrank;
 
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 public class NonDivisibleSubset {
 
@@ -19,7 +15,7 @@ public class NonDivisibleSubset {
             a[i] = sc.nextInt();
             reminders.put(a[i]%k, reminders.getOrDefault(a[i]%k, 0)+1);
         }
-       
+        sc.close();
         int count = Math.min(reminders.getOrDefault(0, 0), 1);
         
         for(int i=1; i<=k/2; i++) {
