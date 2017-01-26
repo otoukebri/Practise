@@ -4,19 +4,19 @@ public class ReverseLL {
 
 	public static void main(String[] args) {
 		
-		CreateSingleLL ll = new CreateSingleLL("1, 11, 21, 31, 41, 51, 61, 71, 81, 91, 101");
-		
-		Node cur = ll.getHead();
-		Node prev = null, next = cur;
-		
-		while(cur != null) {
-			next = next.getNextNode();
-			cur.setNextNode(prev);
-			prev = cur;
-			cur = next;
-		}
-		ll.setHead(prev);
-		ll.displayLL();
+//		CreateSingleLL ll = new CreateSingleLL("1, 11, 21, 31, 41, 51, 61, 71, 81, 91, 101");
+//		
+//		Node cur = ll.getHead();
+//		Node prev = null, next = cur;
+//		
+//		while(cur != null) {
+//			next = next.getNextNode();
+//			cur.setNextNode(prev);
+//			prev = cur;
+//			cur = next;
+//		}
+//		ll.setHead(prev);
+//		ll.displayLL();
 		
 		CreateSingleLL ll2 = new CreateSingleLL("1, 11, 21, 31, 41, 51, 61, 71, 81, 91, 101");
 		ll2.setHead(reverseRecursive(ll2.getHead(), null));
